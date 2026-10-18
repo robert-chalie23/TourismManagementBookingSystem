@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    </head>
+    <body>
+
+    <header class="site-header">
+    <h1>Welcome to Vanuatu tour adventure</h1>
+    <p>Choose a destination to start planning your Vanuatu experience.</p>
+    </header>
+
+    <main>
+    <section class="tour-container" aria-label="Choose a tour destination">
+    <article class="tour-card" data-tour-card="Mount Yasur">
+    <button class="tour-select" type="button" data-tour="Mount Yasur">
+    <span class="tour-image">
+    <img class="tour-photo" src="../hike-mount yasur.jpeg" alt="Visitors watching sunset from Mount Yasur">
+    </span>
+
+  
+    <span class="tour-card-copy">
+    <span class="tour-location">TANNA ISLAND</span>
+    <span class="tour-title">Mount Yasur</span>
+    <span class="tour-description">Feel the ground rumble at one of the world's most accessible active volcanoes.</span>
+    <span class="tour-action">Book this tour <span aria-hidden="true">→</span></span>
+    </span>
+    </button>
+    </article>
+
+   
+    <article class="tour-card" data-tour-card="Scuba Dive">
+    <button class="tour-select" type="button" data-tour="Scuba Dive">
+    <span class="tour-image">
+    <img class="tour-photo" src="../scuba-diving.jpg" alt="Scuba diving in Vanuatu">
+    </span>
+    <span class="tour-card-copy">
+    <span class="tour-location">PORT VILA</span>
+    <span class="tour-title">Scuba Diving</span>
+    <span class="tour-description">Explore coral gardens, vivid marine life and the famous SS President Coolidge wreck.</span>
+    <span class="tour-action">Book this tour <span aria-hidden="true">→</span></span>
+    </span>
+    </button>
+    </article>
+
+
+    <article class="tour-card" data-tour-card="Mele Cascades">
+    <button class="tour-select" type="button" data-tour="Mele Cascades">
+    <span class="tour-image">
+    <img class="tour-photo" src="../mele%20cascades.jpg" alt="Mele Cascades waterfall">
+    </span>
+    <span class="tour-card-copy">
+    <span class="tour-location">EFATE ISLAND</span>
+    <span class="tour-title">Mele Cascades</span>
+    <span class="tour-description">Follow a rainforest stream to cool pools and a beautiful island waterfall.</span>
+    <span class="tour-action">Book this tour <span aria-hidden="true">→</span></span>
+    </span>
+    </button>
+    </article>
+
+
+<article class="tour-card" data-tour-card="Land Diving">
+<button class="tour-select" type="button" data-tour="Land Diving">
+<span class="tour-image">
+<img class="tour-photo" src="../land%20diving.jpg" alt="Land diving on Pentecost Island">
+</span>
+<span class="tour-card-copy">
+<span class="tour-location">PENTECOST ISLAND</span>
+<span class="tour-title">Land Diving</span>
+<span class="tour-description">Witness the extraordinary Naghol ceremony, the ancient tradition behind bungee jumping.</span>
+<span class="tour-action">Book this tour <span aria-hidden="true">→</span></span>
+</span>
+</button>
+</article>
+</section>
+
+
+<section class="booking-section" id="booking" aria-labelledby="booking-title">
+<div class="booking-intro">
+<p class="eyebrow">MAKE IT HAPPEN</p>
+<h2 id="booking-title">Book your tour</h2>
+<p>Choose a date and share your details. We'll be ready to help plan your visit.</p>
+</div>
+<form id="bookingForm">
+<div class="form-field">
+<label for="name">Full name</label>
+<input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" maxlength="60" required>
+</div>
+
+<div class="form-field">
+<label for="email">Email address</label>
+<input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" maxlength="254" required>
+</div>
+
+<div class="form-field">
+<label for="phone">Phone number</label>
+<input type="tel" id="phone" name="phone" placeholder="Your phone number" autocomplete="tel" maxlength="25" required>
+</div>
+
+<div class="form-field">
+<label for="date">Preferred date</label>
+<input type="date" id="date" name="date" required>
+</div>
+
+<div class="form-field">
+<label for="selectedTour">Selected destination</label>
+<input type="text" id="selectedTour" name="tour" placeholder="Choose a destination above" readonly required>
+</div>
+
+<button class="submit-button" type="submit">Request a booking <span aria-hidden="true">→</span></button>
+</form>
+<p id="output" role="status" aria-live="polite"></p>
+<details id="bookingData" hidden>
+<summary>View saved booking data (JSON)</summary>
+<pre id="bookingJson"></pre>
+</details>
+</section>
+</main>
+
+<footer>
+<p>Vanuatu is closer than you think. Your next story starts here.</p>
+</footer>
+
+<script src="../JavaScript/booking.js" defer></script>
+</body>
+
+</html>
